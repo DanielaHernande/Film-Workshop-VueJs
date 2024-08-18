@@ -10,8 +10,9 @@
             :year="movie.Year"
             :type="movie.Type"
        />
-       <div class="d-middle w-100" v-else>
+       <div class="d-middle w-100 ccc" v-else>
             <p>No hay resultados en la busqueda</p>
+            <img src="https://media.tenor.com/IHdlTRsmcS4AAAAM/404.gif" alt="dd">
        </div>
 
     </div>
@@ -44,5 +45,16 @@ async function  fetchMovies() {
 
 p{
     color: $white;
+}
+
+.ccc {
+
+    background-color: black;
+
+    p {
+        color: $white;
+        font-size: 20px;
+        margin-right: 20px;
+    }
 }
 </style>    
