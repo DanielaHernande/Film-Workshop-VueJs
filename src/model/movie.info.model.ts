@@ -19,6 +19,7 @@ export interface InfoMovie {
     imdbVotes:  string;
     imdbID:     string;
     Type:       string;
+    TotalSeasons: string,
     DVD:        string;
     BoxOffice:  string;
     Production: string;

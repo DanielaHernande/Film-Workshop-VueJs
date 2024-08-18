@@ -3,7 +3,7 @@ import axios from "axios";
 
 class ClientHTTP {
     private api: AxiosInstance;
-    private apiKey: string = "690d22ef";
+    private apiKey: string = "c1ef3d07";
 
     constructor(){
         this.api = axios.create({
