@@ -34,7 +34,7 @@ onMounted(() => {
                 <p><strong>Year: </strong> {{ selectMovie?.Year }}</p>
                 <p><strong>Runtime: </strong> {{ selectMovie?.Runtime }}</p>
                 <p><strong>Genre: </strong> {{ selectMovie?.Genre }}</p>
-                <p><strong>Seasons: </strong> {{ selectMovie?.TotalSeasons }}</p>
+                <p v-if="selectMovie?.TotalSeasons"><strong>Seasons: </strong> {{ selectMovie?.TotalSeasons }}</p>
                 <p><strong>Rated: </strong> {{ selectMovie?.Rated }}</p>
                 <p><strong>Trama: </strong> {{ selectMovie?.Plot }}</p>
                 <p><strong>Lenguaje: </strong> {{ selectMovie?.Language }}</p>
@@ -115,7 +115,7 @@ onMounted(() => {
     gap: 10px;
     display: grid;
     margin-top: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 
     p {
 
