@@ -18,6 +18,7 @@
 </template>
 
 <script setup lang="ts">
+
 import { onMounted, ref } from 'vue'
 
 import CardMovie from "@/components/movies/CardMovie.vue"
@@ -29,11 +30,10 @@ onMounted(()=> {
     fetchMovies()
 })
 
-
-
 async function  fetchMovies() {
   await store.getMovies()
 }   
+
 </script>
 
 <style scoped lang="scss">

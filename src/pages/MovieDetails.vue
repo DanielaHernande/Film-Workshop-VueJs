@@ -1,9 +1,12 @@
 <template>
- <h1>DETALLES DE LA PELICULA ID {{ movieId }}</h1>
+    <StartButton />
+    <h1>DETALLES DE LA PELICULA ID {{ movieId }}</h1>
 </template>
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
+// Import btn start
+import StartButton from '@/components/button/StartButton.vue';
 
 const route = useRoute()
 const movieId = route.params.id as string
