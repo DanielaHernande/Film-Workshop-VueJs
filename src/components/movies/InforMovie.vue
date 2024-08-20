@@ -79,11 +79,4 @@ onMounted(async () => {
     flex: 1;
 }
 
-.movie-info-bottom {
-
-    gap: 10px;
-    display: grid;
-    margin-top: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-}
 </style>
